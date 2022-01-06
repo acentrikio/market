@@ -14,12 +14,12 @@ execSync(`node ./scripts/write-repo-metadata > repo-metadata.json`, {
 execSync(`npm run apollo:codegen`, { stdio: 'inherit' })
 
 // Fetch EVM networks metadata
-execSync(
-  `node ./scripts/write-networks-metadata > content/networks-metadata.json`,
-  {
-    stdio: 'inherit'
-  }
-)
+// execSync(
+//   `node ./scripts/write-networks-metadata > content/networks-metadata.json`,
+//   {
+//     stdio: 'inherit'
+//   }
+// )
 
 //Extend ContentJson to support optional field "optionalCookies" in gdpr.json
 //Extend PublishJsonData to support optional fields for disclaimers
